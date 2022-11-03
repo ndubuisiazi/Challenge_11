@@ -38,7 +38,7 @@ console.log(req)
 
 
 app.get('/notes',(req,res)=>{
-    res.sendFile('public/notes.html')
+    res.sendFile('./public/notes.html')
 })
 
 app.post('/notess',(req,res)=>{
