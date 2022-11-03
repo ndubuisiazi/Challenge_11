@@ -12,7 +12,7 @@ const port = process.env.PORT || 3001
 app.use(express.static("public"))
 
 app.get('/api/notes',(req,res)=>{
-    res.sendFile('/Users/ndubuisiazi/Desktop/Bootcamp/Challenge 11/11/public/api/db.json')
+    res.sendFile(__dirname +'/public/api/db.json')
     // res.send('/Users/ndubuisiazi/Desktop/Bootcamp/Challenge 11/11/public/api/db.json','utf-8')
 })
 
@@ -32,7 +32,7 @@ console.log(req)
     console.log(noteList)
 
 
-    fs.writeFileSync("./public/api/db.json",JSON.stringify(noteList))
+    fs.writeFileSync(__dirname +"/public/api/db.json",JSON.stringify(noteList))
     res.end()
 })
 
