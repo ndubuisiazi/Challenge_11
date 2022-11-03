@@ -38,8 +38,8 @@ console.log(req)
 
 
 app.get('/notes',(req,res)=>{
-    // res.sendFile('/Users/ndubuisiazi/Desktop/Bootcamp/Challenge 11/11/public/notes.html')
-    res.send('test')
+    res.sendFile(__dirname +'/public/notes.html')
+
 })
 
 app.post('/notess',(req,res)=>{
