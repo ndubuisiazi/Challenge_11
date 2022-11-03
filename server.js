@@ -43,7 +43,7 @@ app.get('/notes',(req,res)=>{
 })
 
 app.post('/notess',(req,res)=>{
-    res.sendFile('/Users/ndubuisiazi/Desktop/Bootcamp/Challenge 11/11/public/notes.html')
+    res.sendFile(__dirname +'/public/notes.html')
 })
 
 
